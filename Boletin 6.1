@@ -1,0 +1,26 @@
+package boletin6_2;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+/**
+ *
+ * @author dam1
+ */
+public class Boletin6_2 {
+
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        Satelite st = new Satelite();
+        System.out.println("Introduce el meridiano: ");
+        st.setMeridiano(Double.parseDouble(br.readLine()));
+        System.out.println("Introduce el paralelo: ");
+        st.setParalelo(Double.parseDouble(br.readLine()));
+        System.out.println("Introduce el distancia de la tierra: ");
+        st.setDistanciaTerra(Double.parseDouble(br.readLine()));
+        st.verPosicion(st);
+
+    }
+
+}
